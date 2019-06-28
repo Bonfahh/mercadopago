@@ -15,16 +15,14 @@ export default {
   },
   beforeCreate () {
     const mercadopago = require('mercadopago');
-    // eslint-disable-next-line no-console
-    console.log(mercadopago.payment);
     mercadopago.configure({
-      sandbox: true,
-      access_token: 'APP_USR-544664266032005-062710-65e2e43918c5bd359d324a6af50f048b-249745771'
+      client_id: '544664266032005',
+      client_secret: 'i2NH22zM1qT56cDDVNcWzx0giIeXLv7m'
     });
     let preference = {
       items: [
         {
-          id: '1234',
+          id: '1',
           title: 'Practical Silk Clock',
           quantity: 10,
           currency_id: 'BRL',
