@@ -18,6 +18,7 @@ export default {
     // eslint-disable-next-line no-console
     console.log(mercadopago.payment);
     mercadopago.configure({
+      sandbox: true,
       access_token: 'APP_USR-544664266032005-062710-65e2e43918c5bd359d324a6af50f048b-249745771'
     });
     let preference = {
